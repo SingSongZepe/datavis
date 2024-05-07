@@ -1,0 +1,6 @@
+
+let CHART2_BAR_Y_MAX_VALUE = 300000;
+
+export {
+    CHART2_BAR_Y_MAX_VALUE,
+};
