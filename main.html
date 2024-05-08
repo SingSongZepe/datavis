@@ -11,6 +11,7 @@
         <script type="module" src="./js/make_chart2.js"></script>
         <script type="module" src="./js/make_chart3.js"></script>
         <script type="module" src="./js/make_chart4.js"></script>
+        <script type="module" src="./js/refresh.js"></script>
 
         <link rel="stylesheet" href="./main.css">
         <script src="main.js"></script>
@@ -33,15 +34,34 @@
             </div>
         </div>
         <div id="chart-container-3" class="chart-container">
-            <div id="chart-description-" class="chart-description"></div>
+            <div id="chart-description-3" class="chart-description">
+                <h4>Third Chart</h4>
+                <p>The top 1 player in their country</p>
+                <p>Click point for more information, player, and his country, ranking</p>
+            </div>
             <svg id="chart-svg-3" class="chart-svg" width="600" height="340">
 
             </svg>
         </div>
         <div id="chart-container-4" class="chart-container">
-            <svg id="chart-svg-4" class="chart-svg" width="600" height="340"></svg>
-            <div id="chart-description-4" class="chart-description"></div>
+            <svg id="chart-svg-4" class="chart-svg" width="900" height="540"></svg>
+            <div id="chart-description-4" class="chart-description">
+                <h4>Fourth Chart</h4>
+                <p>The top 20 players all over the world</p>
+                <p>Click point for more information, player, and his country, ranking</p>
+                <div class="btn-refresh">REFRESH</div>
+            </div>
         </div>
     </body>
+    <script type="module">
+        import { refresh_chart4 } from './js/refresh.js';
+
+        const div = document.querySelector('.btn-refresh');
+
+        div.addEventListener('click', async () => {
+            console.log("Hello World");
+            refresh_chart4();
+        });
+    </script>
     <script type="module" src="./main.js"></script>
 </html>

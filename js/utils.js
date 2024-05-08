@@ -1,6 +1,6 @@
 function formatXAxisTick(d) {
     if (d.length > 10) {
-        return d.substring(0, 10) + "...";
+        return d.substring(0, 8) + "...";
     } else {
         return d;
     }

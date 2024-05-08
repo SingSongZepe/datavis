@@ -30,7 +30,7 @@ async function makeChart1() {
             cp_counts.push(formattedItem);
         }
     });
-    console.log(cp_counts);
+    // console.log(cp_counts);
 
     let svg = d3.select("#chart-svg-1");
     let margin = {top: 30, right: 30, bottom: 30, left: 30};
